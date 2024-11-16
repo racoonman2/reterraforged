@@ -22,7 +22,7 @@ public class CompositeTerrain extends Terrain {
     
     private static Terrain getDominant(Terrain a, Terrain b) {
         TerrainCategory typeA = a.getCategory();
-        TerrainCategory typeB = a.getCategory();
+        TerrainCategory typeB = b.getCategory();
         TerrainCategory dom = typeA.getDominant(typeB);
         if (dom == typeA) {
             return a;
